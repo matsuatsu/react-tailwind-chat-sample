@@ -22,7 +22,7 @@
         const [isLoading, setIsLoading] = React.useState(false);
         const [inputMessage, setInputMessage] = React.useState("");
 
-        const sendMessage = async () => {
+        const sendMessage = () => {
           setMessages(prev=> [...prev, {role:"user", content:inputMessage}] );
           setIsLoading(true);
           setInputMessage("");
